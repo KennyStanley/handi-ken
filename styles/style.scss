@@ -16,8 +16,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/coming-soon-edited.png');
-    background-position:center top;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/coming-soon-edited.png');
+    background-position:center center;
+    // background-image: url('../images/coming-soon-edited.png');
+    // background-position: center;
+
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -31,20 +34,42 @@ main {
     background: linear-gradient(180deg, rgba(156,122,78,0.8) 20%, rgba(92,60,16,0.7) 55%);
     border-radius: 10vmin;
     box-shadow: 0 0 20px 0px black;
-    width: 80vw;
+    width: max-content;
     font-family: 'Rokkitt', serif;
+    margin: 1rem;
 }
 
 .logo-container {
     text-align: center;
-    
+    max-width: 180px;
     padding-bottom: 2vmin;
+    margin: auto;
+    #logo {
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+
+
+.message {
+    padding: 0 1rem 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #bdbdbd;
+    span{
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+    
     a {
         // text-decoration: none;
         text-decoration-color: #bdbdbd;
     }
     h4 {
-        font-size: 5vmin;
+        font-size: 1rem;
         letter-spacing: 0.1em;
         background-color: #bd5500bd;
         border: 2px solid #bdbdbd;
@@ -52,25 +77,60 @@ main {
         color: #bdbdbd;
         width: max-content;
         margin: auto;
+        margin-top: 1rem;
         padding: 0.65rem;
     }
 }
 
-#logo {
-    width: 100%;
-    // max-width: 50vw;
-    padding: 1rem;
-    padding-bottom: 0;
+@media screen and (max-width: 382px) {
+    .message{
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+        h4 {
+            font-size: 0.8rem;
+        }
+    }
 }
 
-.message {
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #bdbdbd;
-    span{
-        display: block;
-        width: max-content;
-        margin: 0 auto;
+@media screen and (min-width: 440px) {
+    .logo-container {
+        max-width: unset;
+        width: 35vw;
+    }
+    .message{
+        font-size: 1rem;
+        span {
+            display: inline-block;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .message {
+        font-size: 1.2rem;
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .message {
+        font-size: 1.5rem;
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .message {
+        font-size: 1.2rem;
+        h4 {
+            font-size: 1.2rem;
+        }
     }
 }

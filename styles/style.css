@@ -22,9 +22,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/coming-soon-edited.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/coming-soon-edited.png");
-  background-position: center top;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/coming-soon-edited.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/coming-soon-edited.png");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -45,44 +45,30 @@ main {
   border-radius: 10vmin;
   -webkit-box-shadow: 0 0 20px 0px black;
           box-shadow: 0 0 20px 0px black;
-  width: 80vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-family: 'Rokkitt', serif;
+  margin: 1rem;
 }
 
 .logo-container {
   text-align: center;
+  max-width: 180px;
   padding-bottom: 2vmin;
-}
-
-.logo-container a {
-  -webkit-text-decoration-color: #bdbdbd;
-          text-decoration-color: #bdbdbd;
-}
-
-.logo-container h4 {
-  font-size: 5vmin;
-  letter-spacing: 0.1em;
-  background-color: #bd5500bd;
-  border: 2px solid #bdbdbd;
-  border-radius: 10vmin;
-  color: #bdbdbd;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: auto;
-  padding: 0.65rem;
 }
 
-#logo {
+.logo-container #logo {
   width: 100%;
   padding: 1rem;
   padding-bottom: 0;
 }
 
 .message {
-  padding: 1rem;
+  padding: 0 1rem 2rem 1rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #bdbdbd;
 }
 
@@ -92,5 +78,78 @@ main {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
+}
+
+.message a {
+  -webkit-text-decoration-color: #bdbdbd;
+          text-decoration-color: #bdbdbd;
+}
+
+.message h4 {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  background-color: #bd5500bd;
+  border: 2px solid #bdbdbd;
+  border-radius: 10vmin;
+  color: #bdbdbd;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.65rem;
+}
+
+@media screen and (max-width: 382px) {
+  .message {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  .message h4 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .logo-container {
+    max-width: unset;
+    width: 35vw;
+  }
+  .message {
+    font-size: 1rem;
+  }
+  .message span {
+    display: inline-block;
+  }
+  .message h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .message {
+    font-size: 1.2rem;
+  }
+  .message h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .message {
+    font-size: 1.5rem;
+  }
+  .message h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .message {
+    font-size: 1.2rem;
+  }
+  .message h4 {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
