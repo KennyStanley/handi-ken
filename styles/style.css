@@ -55,7 +55,8 @@ main {
 }
 
 .logo-container a {
-  text-decoration: none;
+  -webkit-text-decoration-color: #bdbdbd;
+          text-decoration-color: #bdbdbd;
 }
 
 .logo-container h4 {
