@@ -1,4 +1,75 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/coming-soon-edited.png');
+    background-position:center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: rgba(156,122,78,0.3);
+    background: linear-gradient(180deg, rgba(156,122,78,0.8) 20%, rgba(92,60,16,0.7) 55%);
+    border-radius: 10vmin;
+    box-shadow: 0 0 20px 0px black;
+    width: 80vw;
+    font-family: 'Rokkitt', serif;
+}
+
+.logo-container {
+    text-align: center;
+    
+    padding-bottom: 2vmin;
+    a {
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 5vmin;
+        letter-spacing: 0.1em;
+        background-color: #bd5500bd;
+        border: 2px solid #bdbdbd;
+        border-radius: 10vmin;
+        color: #bdbdbd;
+        width: max-content;
+        margin: auto;
+        padding: 0.65rem;
+    }
+}
+
+#logo {
+    width: 100%;
+    // max-width: 50vw;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.message {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #bdbdbd;
+    span{
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
 }

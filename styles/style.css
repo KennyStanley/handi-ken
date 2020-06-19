@@ -1,9 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/coming-soon-edited.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/coming-soon-edited.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(156, 122, 78, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(156, 122, 78, 0.8)), color-stop(55%, rgba(92, 60, 16, 0.7)));
+  background: linear-gradient(180deg, rgba(156, 122, 78, 0.8) 20%, rgba(92, 60, 16, 0.7) 55%);
+  border-radius: 10vmin;
+  -webkit-box-shadow: 0 0 20px 0px black;
+          box-shadow: 0 0 20px 0px black;
+  width: 80vw;
+  font-family: 'Rokkitt', serif;
+}
+
+.logo-container {
+  text-align: center;
+  padding-bottom: 2vmin;
+}
+
+.logo-container a {
+  text-decoration: none;
+}
+
+.logo-container h4 {
+  font-size: 5vmin;
+  letter-spacing: 0.1em;
+  background-color: #bd5500bd;
+  border: 2px solid #bdbdbd;
+  border-radius: 10vmin;
+  color: #bdbdbd;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  padding: 0.65rem;
+}
+
+#logo {
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.message {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #bdbdbd;
+}
+
+.message span {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
