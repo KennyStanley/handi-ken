@@ -54,7 +54,7 @@ main {
 
 .logo-container {
   text-align: center;
-  max-width: 180px;
+  width: 100%;
   padding-bottom: 2vmin;
   margin: auto;
 }
@@ -68,7 +68,7 @@ main {
 .message {
   padding: 0 1rem 2rem 1rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #bdbdbd;
 }
 
@@ -86,7 +86,7 @@ main {
 }
 
 .message h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1em;
   background-color: #bd5500bd;
   border: 2px solid #bdbdbd;
@@ -96,60 +96,41 @@ main {
   width: -moz-max-content;
   width: max-content;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   padding: 0.65rem;
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (max-width: 420px) {
   .message {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-bottom: 1rem;
   }
   .message h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 440px) {
-  .logo-container {
-    max-width: unset;
-    width: 35vw;
-  }
-  .message {
-    font-size: 1rem;
-  }
   .message span {
     display: inline-block;
-  }
-  .message h4 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .message {
-    font-size: 1.2rem;
-  }
-  .message h4 {
-    font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 800px) {
   .message {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .message h4 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .message {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .message h4 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
