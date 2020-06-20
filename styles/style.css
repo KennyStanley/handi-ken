@@ -22,8 +22,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/coming-soon-edited.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/coming-soon-edited.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/garden.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/garden.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,8 +40,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgba(156, 122, 78, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(156, 122, 78, 0.8)), color-stop(55%, rgba(92, 60, 16, 0.7)));
-  background: linear-gradient(180deg, rgba(156, 122, 78, 0.8) 20%, rgba(92, 60, 16, 0.7) 55%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(156, 122, 78, 0.9)), color-stop(55%, rgba(92, 60, 16, 0.7)));
+  background: linear-gradient(180deg, rgba(156, 122, 78, 0.9) 40%, rgba(92, 60, 16, 0.7) 55%);
   border-radius: 10vmin;
   -webkit-box-shadow: 0 0 20px 0px black;
           box-shadow: 0 0 20px 0px black;
