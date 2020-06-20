@@ -60,7 +60,7 @@ main {
     text-align: center;
     // font-size: 1.5rem;
     font-size: calc(0.5rem + 2.2vmin);
-    color: #bdbdbd;
+    color: white;
     span{
         display: block;
         width: max-content;
@@ -68,14 +68,14 @@ main {
     }
     
     a {
-        text-decoration-color: #bdbdbd;
+        text-decoration-color: white;
     }
     h4 {
         letter-spacing: 0.1em;
         background-color: #bd5500bd;
-        border: 2px solid #bdbdbd;
+        border: 2px solid white;
         border-radius: 10vmin;
-        color: #bdbdbd;
+        color: white;
         width: max-content;
         margin: auto;
         margin-top: 0.8rem;
