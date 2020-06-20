@@ -5,9 +5,13 @@
           box-sizing: border-box;
 }
 
+:root {
+  --window-height: calc(var(--vh, 1vh) * 100);
+}
+
 body {
   width: 100vw;
-  height: 100vh;
+  height: var(--window-height, 100vh);
   background-color: black;
   overflow: hidden;
 }
@@ -69,7 +73,7 @@ main {
   padding: 0 1rem 2rem 1rem;
   text-align: center;
   font-size: calc(0.5rem + 2.2vmin);
-  color: #bdbdbd;
+  color: white;
 }
 
 .message span {
@@ -81,16 +85,16 @@ main {
 }
 
 .message a {
-  -webkit-text-decoration-color: #bdbdbd;
-          text-decoration-color: #bdbdbd;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
 }
 
 .message h4 {
   letter-spacing: 0.1em;
   background-color: #bd5500bd;
-  border: 2px solid #bdbdbd;
+  border: 2px solid white;
   border-radius: 10vmin;
-  color: #bdbdbd;
+  color: white;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
