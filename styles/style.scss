@@ -59,7 +59,7 @@ main {
     padding: 0 1rem 2rem 1rem;
     text-align: center;
     // font-size: 1.5rem;
-    font-size: calc(0.5rem + 2.2vmin);
+    font-size: calc(0.6rem + 2.2vmin);
     letter-spacing: 0.1rem;
     color: white;
     span{
@@ -98,3 +98,14 @@ main {
     }
 }
 
+@media screen and (max-height: 600px) {
+    .logo-container {
+        #logo {
+            width: 80%;
+        }
+    }
+    .message {
+        font-size: calc(0.4rem + 2.2vh);
+        padding-bottom: 1rem;
+    }
+}
