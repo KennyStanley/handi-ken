@@ -68,7 +68,7 @@ main {
 .message {
   padding: 0 1rem 2rem 1rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: calc(0.5rem + 2.2vmin);
   color: #bdbdbd;
 }
 
@@ -86,7 +86,6 @@ main {
 }
 
 .message h4 {
-  font-size: 1.5rem;
   letter-spacing: 0.1em;
   background-color: #bd5500bd;
   border: 2px solid #bdbdbd;
@@ -102,35 +101,13 @@ main {
 
 @media screen and (max-width: 420px) {
   .message {
-    font-size: 1rem;
     padding-bottom: 1rem;
-  }
-  .message h4 {
-    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 440px) {
   .message span {
     display: inline-block;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .message {
-    font-size: 1.9rem;
-  }
-  .message h4 {
-    font-size: 1.9rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .message {
-    font-size: 2rem;
-  }
-  .message h4 {
-    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -57,7 +57,8 @@ main {
 .message {
     padding: 0 1rem 2rem 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-size: calc(0.5rem + 2.2vmin);
     color: #bdbdbd;
     span{
         display: block;
@@ -70,7 +71,7 @@ main {
         text-decoration-color: #bdbdbd;
     }
     h4 {
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
         letter-spacing: 0.1em;
         background-color: #bd5500bd;
         border: 2px solid #bdbdbd;
@@ -85,53 +86,15 @@ main {
 
 @media screen and (max-width: 420px) {
     .message{
-        font-size: 1rem;
         padding-bottom: 1rem;
-        h4 {
-            font-size: 1rem;
-        }
     }
 }
 
 @media screen and (min-width: 440px) {
-    // .logo-container {
-    //     max-width: unset;
-    //     width: 35vw;
-    // }
     .message{
-        // font-size: 1.5rem;
         span {
             display: inline-block;
         }
-        h4 {
-            // font-size: 1.5rem;
-        }
     }
 }
 
-// @media screen and (min-width: 640px) {
-//     .message {
-//         font-size: 1.8rem;
-//         h4 {
-//             font-size: 1.8rem;
-//         }
-//     }
-// }
-
-@media screen and (min-width: 800px) {
-    .message {
-        font-size: 1.9rem;
-        h4 {
-            font-size: 1.9rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .message {
-        font-size: 2rem;
-        h4 {
-            font-size: 2rem;
-        }
-    }
-}
